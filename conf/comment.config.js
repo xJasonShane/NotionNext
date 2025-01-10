@@ -4,7 +4,7 @@
  */
 module.exports = {
   COMMENT_HIDE_SINGLE_TAB:
-    process.env.NEXT_PUBLIC_COMMENT_HIDE_SINGLE_TAB || false, // Whether hide the tab when there's no tabs. 只有一个评论组件时是否隐藏切换组件的标签页
+    process.env.NEXT_PUBLIC_COMMENT_HIDE_SINGLE_TAB || true, // Whether hide the tab when there's no tabs. 只有一个评论组件时是否隐藏切换组件的标签页
 
   // artalk 评论插件
   COMMENT_ARTALK_SERVER: process.env.NEXT_PUBLIC_COMMENT_ARTALK_SERVER || '', // ArtalkServert后端地址 https://artalk.js.org/guide/deploy.html
@@ -45,8 +45,9 @@ module.exports = {
     process.env.NEXT_PUBLIC_COMMENT_GISCUS_LOADING || 'lazy', // 你的 Giscus 載入是否漸進式載入, 預設 'lazy'
   COMMENT_GISCUS_CROSSORIGIN:
     process.env.NEXT_PUBLIC_COMMENT_GISCUS_CROSSORIGIN || 'anonymous', // 你的 Giscus 可以跨網域, 預設 'anonymous'
-
-  COMMENT_CUSDIS_APP_ID: process.env.NEXT_PUBLIC_COMMENT_CUSDIS_APP_ID || '', // data-app-id 36位 see https://cusdis.com/
+  
+  // cusdis 评论插件 更多参考 https://cusdis.com/
+  COMMENT_CUSDIS_APP_ID: process.env.NEXT_PUBLIC_COMMENT_CUSDIS_APP_ID || 'd220e43b-1b58-466d-a522-a1d63e7f223e', // data-app-id 36位 see https://cusdis.com/
   COMMENT_CUSDIS_HOST:
     process.env.NEXT_PUBLIC_COMMENT_CUSDIS_HOST || 'https://cusdis.com', // data-host, change this if you're using self-hosted version
   COMMENT_CUSDIS_SCRIPT_SRC:
