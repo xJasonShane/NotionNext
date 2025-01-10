@@ -23,14 +23,14 @@ const CONFIG = {
   HEO_HERO_TITLE_3: 'JasonShane',
   HEO_HERO_TITLE_4: 'About Me',
   HEO_HERO_TITLE_5: '关于我的一些事',
-  HEO_HERO_TITLE_LINK: '',
+  HEO_HERO_TITLE_LINK: 'https://blog.xshan.top/about',
   // 英雄区遮罩文字
   HEO_HERO_COVER_TITLE: '随便逛逛',
 
   // 英雄区显示三个置顶分类
-  HEO_HERO_CATEGORY_1: { title: '必看精选', url: '/tag/必看精选' },
-  HEO_HERO_CATEGORY_2: { title: '热门文章', url: '/tag/热门文章' },
-  HEO_HERO_CATEGORY_3: { title: '实用教程', url: '/tag/实用教程' },
+  HEO_HERO_CATEGORY_1: { title: '番剧推荐', url: '/tag/番剧推荐' },
+  HEO_HERO_CATEGORY_2: { title: '游戏感悟', url: '/tag/游戏感悟' },
+  HEO_HERO_CATEGORY_3: { title: '加密文章', url: '/tag/加密文章' },
 
   // 英雄区右侧推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
   HEO_HERO_RECOMMEND_POST_TAG: '推荐',
@@ -40,21 +40,20 @@ const CONFIG = {
   // 右侧个人资料卡牌欢迎语，点击可自动切换
   HEO_INFOCARD_GREETINGS: [
     '你好！我是',
-    '🔍 分享与热心帮助',
-    '🤝 专修交互与设计',
-    '🏃 脚踏实地行动派',
-    '🏠 智能家居小能手',
-    '🤖️ 数码科技爱好者',
-    '🧱 团队小组发动机'
+    '一名喜欢折腾的人',
+    '一名热爱追番的人',
+    '一名探索未知的人',
+    '一名体验游戏的人',
+    '一名感悟文学的人'
   ],
 
   // 个人资料底部按钮
-  HEO_INFO_CARD_URL1: '/about',
+  HEO_INFO_CARD_URL1: 'https://blog.xshan.top/about',
   HEO_INFO_CARD_ICON1: 'fas fa-user',
-  HEO_INFO_CARD_URL2: 'https://github.com/tangly1024',
+  HEO_INFO_CARD_URL2: 'https://github.com/xJasonShane',
   HEO_INFO_CARD_ICON2: 'fab fa-github',
-  HEO_INFO_CARD_URL3: 'https://www.tangly1024.com',
-  HEO_INFO_CARD_TEXT3: '了解更多',
+  HEO_INFO_CARD_URL3: 'https://blog.xshan.top/placeholder',
+  HEO_INFO_CARD_TEXT3: '跳转主页',
 
   // 用户技能图标
   HEO_GROUP_ICONS: [
