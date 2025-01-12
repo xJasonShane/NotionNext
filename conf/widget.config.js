@@ -2,7 +2,7 @@
  * 悬浮在网页上的挂件
  */
 module.exports = {
-  THEME_SWITCH: process.env.NEXT_PUBLIC_THEME_SWITCH || true, // 是否显示切换主题按钮
+  THEME_SWITCH: process.env.NEXT_PUBLIC_THEME_SWITCH || false, // 是否显示切换主题按钮
   // Chatbase 是否显示chatbase机器人 https://www.chatbase.co/
   CHATBASE_ID: process.env.NEXT_PUBLIC_CHATBASE_ID || null,
   // WebwhizAI 机器人 @see https://github.com/webwhiz-ai/webwhiz
@@ -20,7 +20,7 @@ module.exports = {
     process.env.NEXT_PUBLIC_WIDGET_PET_LINK ||
     'https://cdn.jsdelivr.net/npm/live2d-widget-model-nico/assets/nico.model.json', // 挂件模型地址 @see https://github.com/xiazeyu/live2d-widget-models
   WIDGET_PET_SWITCH_THEME:
-    process.env.NEXT_PUBLIC_WIDGET_PET_SWITCH_THEME || false, // 点击宠物挂件切换博客主题
+    process.env.NEXT_PUBLIC_WIDGET_PET_SWITCH_THEME || true, // 点击宠物挂件切换博客主题
 
   SPOILER_TEXT_TAG: process.env.NEXT_PUBLIC_SPOILER_TEXT_TAG || '', // Spoiler文本隐藏功能，如Notion中 [sp]希望被spoiler的文字[sp]，填入[sp] 即可
 
@@ -44,18 +44,18 @@ module.exports = {
         'http://p2.music.126.net/pF-hgC6254SIcfmGkWh7Kg==/109951163951230860.jpg?param=177y177'
     },
     {
+        name: '铭记 [狐妖小红娘 千颜篇 OP]',
+        artist: '呦猫UNEKO',
+        url: 'https://music.163.com/song/media/outer/url?id=1310584608.mp3',
+        cover:
+          'http://p1.music.126.net/-eWjNVaaVhstI-J8mpdKOQ==/109951163554602833.jpg?param=177y177'
+    },
+    {
       name: '梦回还 [狐妖小红娘 王权篇 OP]',
       artist: '呦猫UNEKO',
       url: 'https://music.163.com/song/media/outer/url?id=405253632.mp3',
       cover:
         'http://p2.music.126.net/hAfIXJP_ZBRQKd1VE_Hqbg==/16625715324173485.jpg?param=177y177'
-    },
-    {
-      name: '铭记 [狐妖小红娘 千颜篇 OP]',
-      artist: '呦猫UNEKO',
-      url: 'https://music.163.com/song/media/outer/url?id=1310584608.mp3',
-      cover:
-        'http://p1.music.126.net/-eWjNVaaVhstI-J8mpdKOQ==/109951163554602833.jpg?param=177y177'
     }
   ],
   MUSIC_PLAYER_METING: process.env.NEXT_PUBLIC_MUSIC_PLAYER_METING || false, // 是否要开启 MetingJS，从平台获取歌单。会覆盖自定义的 MUSIC_PLAYER_AUDIO_LIST，更多配置信息：https://github.com/metowolf/MetingJS
